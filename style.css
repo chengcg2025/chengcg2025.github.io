@@ -127,8 +127,12 @@ a:focus-visible {
 
 .hero {
   margin-top: 34px;
-  padding: 66px 32px 42px;
-  text-align: center;
+  padding: 52px 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  text-align: left;
   background: var(--card-background);
   border: 1px solid var(--card-border);
   border-radius: 22px;
@@ -137,33 +141,43 @@ a:focus-visible {
 }
 
 .avatar {
-  width: 150px;
-  height: 210px;
+  width: 190px;
+  height: 266px;
+  flex: 0 0 auto;
+  border-radius: 8px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 6px;
   border: 2px solid #d6d9dc;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+.hero-info {
+  max-width: 650px;
 }
 
 .hero h1 {
-  margin: 22px 0 4px;
+  margin: 0 0 12px;
   color: #111111;
-  font-size: clamp(34px, 5vw, 48px);
-  line-height: 1.25;
+  font-size: clamp(38px, 5vw, 52px);
+  line-height: 1.2;
 }
 
 .research {
-  margin: 0;
+  margin: 0 0 8px;
   color: var(--muted);
   font-size: 23px;
+}
+
+.email-line {
+  margin: 0;
+  font-size: 18px;
 }
 
 .quick-links {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px 22px;
 }
 
@@ -343,7 +357,10 @@ main > .container:not(.hero) {
 
   .hero {
     margin-top: 20px;
-    padding: 42px 18px 30px;
+    padding: 36px 20px 30px;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
     border-radius: 16px;
   }
 
@@ -354,12 +371,24 @@ main > .container:not(.hero) {
   }
 
   .avatar {
-    width: 126px;
-    height: 126px;
+    width: 150px;
+    height: 210px;
+  }
+
+  .hero-info {
+    max-width: 100%;
   }
 
   .research {
     font-size: 19px;
+  }
+
+  .email-line {
+    font-size: 16px;
+  }
+
+  .quick-links {
+    justify-content: center;
   }
 
   .content-section h2 {
