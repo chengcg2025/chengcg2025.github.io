@@ -137,12 +137,13 @@ a:focus-visible {
 }
 
 .avatar {
-  width: 148px;
-  height: 148px;
-  border-radius: 50%;
+  width: 150px;
+  height: 210px;
   object-fit: cover;
-  border: 3px solid #d6d9dc;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  object-position: center top;
+  border-radius: 6px;
+  border: 2px solid #d6d9dc;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
 }
 
 .hero h1 {
